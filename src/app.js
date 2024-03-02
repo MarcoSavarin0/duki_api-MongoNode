@@ -10,6 +10,7 @@ const userRoutes = require('./routes/auth.routes')
 
 const app = express();
 createRoles.createRoles()
+createRoles.createSongs()
 app.use(bodyParser.json());
 
 mongoose.connect(process.env.MONGO_URL,{dbName: process.env.MONGO_DB_NAME})
