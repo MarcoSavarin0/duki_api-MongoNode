@@ -23,7 +23,7 @@ module.exports = {
             const count = await Song.estimatedDocumentCount();
             if (count > 0) return;
 
-            const songs = await Promise.all(dukiSongs.map(async (song) => {
+            const songs = await Promise.all(dukiSong.map(async (song) => {
                 return new Song(song).save();
             }));
             console.log(songs);
