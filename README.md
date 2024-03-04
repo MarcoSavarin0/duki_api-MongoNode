@@ -71,13 +71,13 @@ GET /api/songs/65e3b44b8c102a61dc669263
 ### Busca las canciones de por año
 
 ```
-GET /api/year/:año
+GET /api/songs/year/:año
 ```
 Este endpoint permite buscar todos los lanzamientos que se hicieron en ese año. Reemplaza `:año` con el año que quieras buscar.
 #### Ejemplo de solicitud:
 
 ```
-GET /api/songs/2019
+GET /api/songs/year/2019
 ```
 ```json
 {
@@ -94,13 +94,13 @@ GET /api/songs/2019
 ### Busca las canciones que hizo con un artista o mas artistas
 
 ```
-GET /api/with?ft=[artista/s]
+GET /api/songs/with?ft=[artista/s]
 ```
 Este endpoint permite buscar todas las canciones que tiene duki con ese artista. Reemplaza `[artista/s]` con el artista que quieras buscar.
 #### Ejemplo de solicitud:
 
 ```
-GET /api/with?ft=Khea
+GET /api/songs/with?ft=Khea
 ```
 ```json
 {
