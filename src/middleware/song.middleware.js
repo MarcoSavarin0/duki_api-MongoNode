@@ -6,7 +6,7 @@ const getSong = async (req, res, next) => {
     if (!id.match(/^[0-9a-fA-F]{24}$/)) {
         return res.status(404).json(
             {
-                message: 'El ID del libro no es válido'
+                message: 'El ID de la cancion no es válido'
             }
         )
     }
@@ -16,7 +16,7 @@ const getSong = async (req, res, next) => {
         if (!song) {
             return res.status(404).json(
                 {
-                    message: 'El libro no fue encontrado'
+                    message: 'la cancion no fue encontrado'
                 }
             )
         }
