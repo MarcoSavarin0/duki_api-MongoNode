@@ -68,6 +68,54 @@ GET /api/songs/65e3b44b8c102a61dc669263
 }
 ```
 
+### Busca las canciones de por año
+
+```
+GET /api/year/:año
+```
+Este endpoint permite buscar todos los lanzamientos que se hicieron en ese año. Reemplaza `:año` con el año que quieras buscar.
+#### Ejemplo de solicitud:
+
+```
+GET /api/songs/2019
+```
+```json
+{
+    "_id": "65e3a530765b845f8614b901",
+    "title": "Lebron",
+    "artists": "Duki",
+    "genre": "Trap",
+    "publication_date": "1 de Enero del 2019",
+    "url": "https://www.youtube.com/watch?v=zzkf4x1grXY&ab_channel=Duki",
+    "__v": 0
+}
+```
+
+### Busca las canciones que hizo con un artista o mas artistas
+
+```
+GET /api/with?ft=[artista/s]
+```
+Este endpoint permite buscar todas las canciones que tiene duki con ese artista. Reemplaza `[artista/s]` con el artista que quieras buscar.
+#### Ejemplo de solicitud:
+
+```
+GET /api/songswith?ft=Khea
+```
+```json
+{
+    "_id": "65e39b6d765b845f8614b899",
+    "title": "She Don't Give a FO",
+    "artists": "Duki , Khea",
+    "genre": "Trap",
+    "publication_date": "7 de Noviembre de 2017",
+    "url": "https://www.youtube.com/watch?v=W0yp3rSfx3I&ab_channel=MUEVARecords",
+    "__v": 0
+}
+```
+
+
+
 ## Base URL
 
 El base URL de esta API es:
