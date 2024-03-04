@@ -100,7 +100,7 @@ Este endpoint permite buscar todas las canciones que tiene duki con ese artista.
 #### Ejemplo de solicitud:
 
 ```
-GET /api/songswith?ft=Khea
+GET /api/with?ft=Khea
 ```
 ```json
 {
