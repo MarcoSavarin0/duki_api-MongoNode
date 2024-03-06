@@ -1,4 +1,5 @@
 # 🦇 Documentación de la API del Duki :smiling_imp:
+(Actualmente se encuentra caida, llegue a la cuota maxima en railway :( )
 
 Esta API proporciona acceso a canciones del artista Duki. Ofrece dos rutas GET para listar todas las canciones y buscar canciones por su ID (por el momento).
 Y contiene 5 rutas solo para el acceso a un administrador (osea yo) 😉
